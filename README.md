@@ -1,31 +1,40 @@
-### Vehicle Damage Detection Backend Server
 
-This code is for FastAPI server that takes car image as an input and predicts if it has a damage or not.
-It has a single end point called `predict` which takes input file and returns a response in this format,
-```commandline
-{
-    "prediction": "Rear Breakage"
-}
-```
+# **🚗 Vehicle Damage Detection Model** <br>
+A machine learning–based Vehicle Damage Detection system that automatically identifies and classifies vehicle damage from images. This project demonstrates the use of computer vision and deep learning techniques to solve real-world insurance and automotive inspection problems.
 
-### Model Details
-1. Used ResNet50 for transfer learning
-2. Model was trained on around 1700 images with 6 target classes
-   1. Front Normal
-   1. Front Crushed
-   1. Front Breakage
-   1. Rear Normal
-   1. Rear Crushed
-   1. Rear Breakage
-9. The accuracy on the validation set was around 80%
+## **🧠 Overview** <br>
+The Vehicle Damage Detection Model analyzes vehicle images to determine whether damage is present. It is designed to support applications such as insurance claim automation, vehicle inspection, and damage assessment. The project focuses on image preprocessing, model training, and prediction using Python and machine learning libraries.
 
-### Set Up
+## **🚀 Features** <br>
+✅ Detects vehicle damage from images<br>
+✅ Uses machine learning / deep learning models<br>
+✅ Image preprocessing and feature extraction<br>
+✅ Model training and evaluation<br>
+✅ Predicts damage on new/unseen images<br>
 
-1. To get started, first install the dependencies using:
-    ```commandline
-     pip install -r requirements.txt
-    ```
-   
-2. Run the fast api server:
-   ```commandline
-   fastapi dev server.py
+## **🧱 Project Structure** <br>
+├── dataset/              # Training and testing images<br>
+├── model/                # Trained model files<br>
+├── notebooks/            # Jupyter notebooks for training and analysis<br>
+├── src/                  # Core Python scripts<br>
+├── requirements.txt      # Python dependencies<br>
+└── README.md             # Project documentation<br>
+
+## **⚙️ Installation** <br>
+Install the required dependencies:<br>
+pip install -r requirements.txt<br>
+
+## **▶️ Run the Project** <br>
+Run the main script or notebook to train and test the model: <br>
+python src/main.py <br>
+Or open the Jupyter notebook: <br>
+jupyter notebook <br>
+
+## *🧪 Model Workflow <br>
+Load and preprocess vehicle images<br>
+Train the damage detection model<br>
+Evaluate model performance<br>
+Predict damage on new images<br>
+
+## **📄 License** <br>
+This project is open-source and available for educational and learning purposes.
